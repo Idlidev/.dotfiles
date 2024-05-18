@@ -19,6 +19,9 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 export GPG_TTY=$(tty)
 export GOPROXY=direct
 export LESSHISTFILE="-"
+export ANKI_WAYLAND=1
+export PATH="$PATH:`pwd`/flutter/bin"
+export CHROME_EXECUTABLE="/usr/bin/brave"
 
 export EDITOR=nvim
 export MANPAGER="bat --theme Nord -l man -p'"
@@ -39,6 +42,6 @@ export RSPOTIFY_CLIENT_ID=`cat $HOME/extras/misc/stuffz/sp_client_id`
 [[ -d "$HOME/.local/share/gem/ruby/3.0.0/bin" ]] && PATH="$HOME/.local/share/gem/ruby/3.0.0/bin:$PATH"
 
 
-if [[ -z $WAYLAND_DISPLAY && $(tty) = "/dev/tty1" ]]; then
+ if [[ -z $WAYLAND_DISPLAY && $(tty) = "/dev/tty1" ]]; then
 	exec dbus-run-session river -log-level debug > /tmp/river-${timestamp}.log 2>&1
 fi
