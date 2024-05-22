@@ -29,8 +29,11 @@ pipewire-jack
 pipewire-pulse
 wireplumber
 xdg-desktop-portal-wlr
-playerctl
 qt5-wayland
 swappy
 slurp
 nemo
+mpv
+waybar
+ttf-jetbrains-mono-nerd
+network-manager-applet
