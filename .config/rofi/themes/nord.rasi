@@ -6,7 +6,7 @@
  *******************************************************************************/
 
 * {
-    font:   "JetbrainsMono 11";
+    font:   "JetbrainsMono 14";
 
     nord0:     #2e3440;
     nord1:     #3b4252;
@@ -32,9 +32,9 @@
     text-color:         @nord4;
     accent-color:       @nord9;
 
-    margin:     0px;
+    margin:     1px;
     padding:    2px;
-    spacing:    0px;
+    spacing:    1px;
 }
 
 window {
@@ -42,7 +42,7 @@ window {
     border-color:       @accent-color;
 
     location:   center;
-    width:      680px;
+    width:      880px;
     y-offset:   -160px;
     border:     1px;
 }

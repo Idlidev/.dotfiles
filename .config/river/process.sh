@@ -12,7 +12,7 @@ nm-applet --indicator &
 
 killall wlsunset
 wlsunset -T 4500 &
-brightnessctl set 75
+brightnessctl set 20%
 
 # River will send the process group of the init executable SIGTERM on exit.
 riverctl default-layout rivertile &

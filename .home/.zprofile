@@ -26,9 +26,11 @@ export CHROME_EXECUTABLE="/usr/bin/brave"
 export EDITOR=nvim
 export MANPAGER="bat --theme Nord -l man -p'"
 
+export GDK_DPI_SCALE=1.3
+
 # spotifatius config
-export RSPOTIFY_CLIENT_SECRET=`cat $HOME/extras/misc/stuffz/sp_client_secret`
-export RSPOTIFY_CLIENT_ID=`cat $HOME/extras/misc/stuffz/sp_client_id`
+#export RSPOTIFY_CLIENT_SECRET=`cat $HOME/extras/misc/stuffz/sp_client_secret`
+#export RSPOTIFY_CLIENT_ID=`cat $HOME/extras/misc/stuffz/sp_client_id`
 
 [[ -d "$HOME/.bin" ]] && PATH="$HOME/.bin:$PATH"
 [[ -d "$HOME/.local/bin" ]] && PATH="$HOME/.local/bin:$PATH"
