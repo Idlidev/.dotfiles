@@ -27,6 +27,7 @@ pipewire
 pipewire-alsa
 pipewire-jack
 pipewire-pulse
+pavucontrol
 wireplumber
 xdg-desktop-portal-wlr
 qt5-wayland
@@ -40,3 +41,5 @@ network-manager-applet
 fzf
 noto-fonts-emoji
 man-db
+unzip
+unrar

@@ -21,7 +21,10 @@ riverctl map normal $mod Y spawn "~/.config/river/scripts/yt"
 # Dmenu, incase rofi fails
 riverctl map normal $mod+Shift C spawn "dmenu_run"
 
-# Open discord
+# Open woomer
+riverctl map normal $mod W spawn woomer
+
+# Woomer
 riverctl map normal $mod+Shift D spawn "discord --ignore-gpu-blocklist --disable-features=UseOzonePlatform --enable-features=VaapiVideoDecoder --use-gl=desktop --enable-gpu-rasterization --enable-zero-copy"
 
 # Lock screen
@@ -179,7 +182,8 @@ gtk_theme="$(grep 'gtk-theme-name' "$config" | sed 's/.*\s*=\s*//')"
 icon_theme="$(grep 'gtk-icon-theme-name' "$config" | sed 's/.*\s*=\s*//')"
 cursor_theme="$(grep 'gtk-cursor-theme-name' "$config" | sed 's/.*\s*=\s*//')"
 font_name="$(grep 'gtk-font-name' "$config" | sed 's/.*\s*=\s*//')"
-gsettings set "$gnome_schema" gtk-theme "$gtk_theme"
-gsettings set "$gnome_schema" icon-theme "$icon_theme"
+set $gnome-schema org.gnome.desktop.interface
+gsettings set "$gnome_schema" gtk-theme "Nordic"
+gsettings set "$gnome_schema" icon-theme "Numigsur"
 gsettings set "$gnome_schema" cursor-theme "$cursor_theme"
 gsettings set "$gnome_schema" font-name "$font_name"
