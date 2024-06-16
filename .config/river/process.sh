@@ -27,4 +27,3 @@ killall swaybg
 swaybg -i ~/.dotfiles/.assets/wallpapers/warrior_nord.jpg -m fill
 
 ~/.config/scripts/updates.sh
-~/.config/scripts/bday.sh

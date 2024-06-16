@@ -41,9 +41,10 @@
 			"4",
 			"5",
 			"6",
+			"7",
 		],
 		"disable-click": false,
-		"num-tags": 6
+		"num-tags": 7
 	},
 	"temperature": {
 		"hwmon-path-abs": "/sys/class/hwmon",
