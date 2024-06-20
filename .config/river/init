@@ -187,3 +187,4 @@ gsettings set "$gnome_schema" gtk-theme "Nordic"
 gsettings set "$gnome_schema" icon-theme "Numigsur"
 gsettings set "$gnome_schema" cursor-theme "$cursor_theme"
 gsettings set "$gnome_schema" font-name "$font_name"
+gsettings set "$gnome_schema" text-scaling-factor 1.33
