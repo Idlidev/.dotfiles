@@ -7,25 +7,25 @@ Whi='\e[0;37m';
 echo -e "[${Red}*${Whi}] Updating system.."
 sudo pacman -Syu
 
-# Install aura AUR helper
-#echo -e "[${Red}+${Whi}] Installing aura"
-#git clone https://aur.archlinux.org/aura-bin.git /tmp/aura-git-cloned
-#cd /tmp/aura-git-cloned/
-#makepkg -sfci --noconfirm --needed
+ #Install aura AUR helper
+echo -e "[${Red}+${Whi}] Installing aura"
+git clone https://aur.archlinux.org/aura-bin.git /tmp/aura-git-cloned
+cd /tmp/aura-git-cloned/
+makepkg -sfci --noconfirm --needed
 
 # Install pkgs
-#echo -e "[${Red}+${Whi}] Installing repo packages"
-#for repo_pkg in $(cat ~/.dotfiles/.assets/pkg_lists/pkg_list)
-#do
-#	sudo pacman -S --noconfirm --needed $repo_pkg
-#done
+echo -e "[${Red}+${Whi}] Installing repo packages"
+for repo_pkg in $(cat ~/.dotfiles/.assets/pkg_lists/pkg_list)
+do
+	sudo pacman -S --noconfirm --needed $repo_pkg
+done
 
 # Install pkgs from the AUR
-# echo -e "[${Cya}+${Whi}] Installing AUR packages"
-# for aur_pkg in $(cat ~/.dotfiles/.assets/pkg_lists/aur_pkg_list)
-#do
-#	sudo aura -Acax --noconfirm $aur_pkg
-#done
+ echo -e "[${Cya}+${Whi}] Installing AUR packages"
+ for aur_pkg in $(cat ~/.dotfiles/.assets/pkg_lists/aur_pkg_list)
+do
+	sudo aura -Acax --noconfirm $aur_pkg
+done
 
 # Setup ZSH
 echo -e "[${Gre}*${Whi}] Setting up ZSH plugins"
@@ -42,6 +42,10 @@ echo -e "[${Gre}*${Whi}] Cloning GTK theme and icons"
 
 sudo git clone https://codeberg.org/tplasdio/numigsur-icon-theme.git /usr/share/icons/numigsur-icon-theme
 sudo git clone https://github.com/EliverLara/Nordic /usr/share/themes/Nordic
+
+# Change default commit message for git
+echo -e "[${Gre}*${Whi}] Cloning default commit message for git"
+git config --global commit.template ~/.gitmessage
 
 chmod +x ./02-configs.sh
 ./02-configs.sh
