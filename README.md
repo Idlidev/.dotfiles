@@ -21,6 +21,9 @@ For setting up, see [SETUP.md](./.assets/SETUP.md)
 
 ![Alt](./.assets/screenshots/1.png)
 ![Alt](./.assets/screenshots/2.png)
+![Alt](./.assets/screenshots/3.png)
+![Alt](./.assets/screenshots/4.png)
+![Alt](./.assets/screenshots/5.png)
 
 </details>
 

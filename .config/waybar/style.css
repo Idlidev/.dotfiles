@@ -16,26 +16,28 @@ window#waybar.hidden {
 
 #window {
 	margin-top: 6px;
-	padding-left: 17px;
-	padding-right: 17px;
-	transition: none;
+	padding-left: 15px;
+	padding-right: 15px;
+	border-radius: 5px;
+	transition: fade;
 
 	color: #8FBCBB;
+	background: #2E3440;
+	/*border-bottom: 3px solid #8FBCBB;*/
 }
 
 #custom-powermenu {
 	margin-top: 6px;
 	margin-left: 12px;
 	margin-right: 12px;
-	padding-left: 17px;
+	padding-left: 15px;
 	padding-right: 20px;
+	border-radius: 5px;
 	transition: none;
 
 	color: #d8dee9;
-
-	background: #3B4252;
-	border-bottom: 7px solid #2E3440;
-	border-right: 7px solid #2E3440;
+	background: #2E3440;
+	/*border-bottom: 3px solid #6a7796;*/
 }
 
 
@@ -43,8 +45,9 @@ window#waybar.hidden {
 	margin-top: 6px;
 	margin-left: 12px;
 	margin-right: 12px;
-	padding-left: 17px;
+	padding-left: 15px;
 	padding-right: 20px;
+	border-radius: 5px;
 	transition: none;
 	background: #2e3440;
 }
@@ -53,16 +56,17 @@ window#waybar.hidden {
 	margin-top: 6px;
 	margin-right: 12px;
 	font-size: 9px;
+	border-radius: 5px;
 	transition: none;
-	background: #3B4252;
-	border-bottom: 7px solid #2E3440;
-	border-right: 7px solid #2E3440;
+	background: #2e3440;
+	/*border-bottom: 3px solid #6a7796;*/
 }
 
 #tags button {
 	transition: none;
 	color: #4c566a;
 	background: transparent;
+	border-radius: 0px;
 }
 
 #tags button.occupied {
@@ -75,6 +79,7 @@ window#waybar.hidden {
 	color: #81a1c1;
 	border-bottom: 3px solid #81a1c1;
 	background: #4C566A;
+	border-radius: inherit;
 }
 
 #tags button:hover {
@@ -87,40 +92,37 @@ window#waybar.hidden {
 #temperature {
 	margin-top: 6px;
 	margin-right: 12px;
+	border-radius: 5px;
 	transition: none;
 	padding: 0 10px;
 
+	background: #2e3440;
 	color: #81A1C1;
-
-	background: #3B4252;
-	border-bottom: 7px solid #2E3440;
-	border-right: 7px solid #2E3440;
+	/*border-bottom: 3px solid #6a7796;*/
 }
 
 #pulseaudio {
 	margin-top: 6px;
 	margin-left: 12px;
+	border-radius: 5px;
 	transition: none;
 	padding: 0 10px;
 
 	color: #D08770;
-
-	background: #3B4252;
-	border-bottom: 7px solid #2E3440;
-	border-right: 7px solid #2E3440;
+	background: #2E3440;
+	/*border-bottom: 3px solid #6a7796;*/
 }
 
 #battery {
 	margin-top: 6px;
 	margin-left: 12px;
+	border-radius: 5px;
 	transition: none;
 	padding: 10px 10px;
 
 	color: #A3BE8C;
-
-	background: #3B4252;
-	border-bottom: 7px solid #2E3440;
-	border-right: 7px solid #2E3440;
+	background: #2E3440;
+	/*border-bottom: 3px solid #6a7796;*/
 }
 
 #battery.critical:not(.charging) {
@@ -143,52 +145,61 @@ window#waybar.hidden {
 #backlight {
 	margin-top: 6px;
 	margin-left: 12px;
+	border-radius: 5px;
 	transition: none;
 	padding: 10px 10px;
 
 	color: #EBCB8B;
-
-	background: #3B4252;
-	border-bottom: 7px solid #2E3440;
-	border-right: 7px solid #2E3440;
+	background: #2E3440;
+	/*border-bottom: 3px solid #6a7796;*/
 }
 
 #custom-cpu {
 	margin-top: 6px;
 	margin-left: 12px;
+	border-radius: 5px;
 	transition: none;
 	padding: 10px 10px;
 
 	color: #B48EAD;
-
-	background: #3B4252;
-	border-bottom: 7px solid #2E3440;
-	border-right: 7px solid #2E3440;
+	background: #2E3440;
+	/*border-bottom: 3px solid #6a7796;*/
 }
 
 #custom-clock {
 	margin-top: 6px;
 	margin-left: 12px;
 	margin-right: 12px;
+	border-radius: 5px;
 	transition: none;
 	padding: 10px 10px;
 
 	color: #BF616A;
+	background: #2E3440;
+	/*border-bottom: 3px solid #6a7796;*/
+}
 
-	background: #3B4252;
-	border-bottom: 7px solid #2E3440;
-	border-right: 7px solid #2E3440;
+#custom-spotify {
+	margin-top: 6px;
+	margin-right: 12px;
+	padding-left: 15px;
+	padding-right: 20px;
+	border-radius: 5px;
+	transition: none;
+
+	color: #d8dee9;
+	background: #2E3440;
+	/*border-bottom: 3px solid #6a7796;*/
 }
 
 #tray {
 	margin-top: 6px;
 	margin-right: 12px;
+	border-radius: 5px;
 	padding-left: 10px;
 	padding-right: 10px;
 
 	color: #d8dee9;
-
-	background: #3B4252;
-	border-bottom: 7px solid #2E3440;
-	border-right: 7px solid #2E3440;
+	background: #2E3440;
+	/*border-bottom: 3px solid #6a7796;*/
 }

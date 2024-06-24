@@ -46,14 +46,14 @@ local plugins = function(use)
 		config = "require('plugins.settings.lualine')"
 	})
 	-- tree plugin for viewing project tree
-	use({
-	"kyazdani42/nvim-tree.lua",
-		requires = {
-			'kyazdani42/nvim-web-devicons', -- optional, for file icons
-		},
-		cmd = { "NvimTreeToggle", "NvimTreeFocus" },
-		config = "require('plugins.settings.nvimtree')"
-	})
+	--use({
+	--"kyazdani42/nvim-tree.lua",
+		--requires = {
+			--'kyazdani42/nvim-web-devicons', -- optional, for file icons
+		--},
+		--cmd = { "NvimTreeToggle", "NvimTreeFocus" },
+		--config = "require('plugins.settings.nvimtree')"
+	--})
 	-- bracket autocompletion
 	use({
 		"windwp/nvim-autopairs",
