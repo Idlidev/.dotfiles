@@ -4,6 +4,9 @@ mako &
 killall waybar
 waybar &
 
+killall twenty
+twenty --init &
+
 killall polkit-gnome-authentication-agent-1
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
